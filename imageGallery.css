@@ -1,0 +1,47 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+    border: 1px solid black;
+    height: 80vh;
+}
+
+.image{
+    background:url(https://picsum.photos/150);
+    min-height: 150px;
+    min-width: 150px;
+    padding: 10px;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.text{
+    font-family: arial;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: .3s;
+
+}
+
+.text a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1 px black;
+}
+
+.image:hover .text{
+    opacity: 1;
+    
+}
